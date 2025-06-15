@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>More Birthday Surprises</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      color: #cc3366;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .ticket {
+      display: inline-block;
+      background: #fff;
+      border: 2px dashed #cc3366;
+      padding: 30px 40px;
+      font-size: 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .ticket:hover {
+      background-color: #ffe6ef;
+    }
+    .reveal {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      color: #333;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>More Presents Here 🎉</h1>
+
+  <div class="ticket" onclick="revealGift()">
+    🎟 Click to open your secret ticket
+  </div>
+
+  <div id="gift" class="reveal">
+    🎁 Gift Voucher: Weight Training Gloves – 500 THB
+  </div>
+
+  <script>
+    function revealGift() {
+      document.getElementById('gift').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>

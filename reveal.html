@@ -44,6 +44,31 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+    .more-button {
+        margin: 50px auto;
+        padding: 18px 40px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background: linear-gradient(135deg, #ffc4d6, #ff90b3);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgba(255, 144, 179, 0.4);
+        transition: all 0.3s ease;
+        animation: pulse 2s infinite;
+    }
+
+    .more-button:hover {
+        transform: scale(1.07);
+        background: linear-gradient(135deg, #ffadc1, #ff6794);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 144, 179, 0.6); }
+        70% { box-shadow: 0 0 0 10px rgba(255, 144, 179, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 144, 179, 0); }
+    }
   </style>
 </head>
 <body>
@@ -57,9 +82,10 @@
       <img src="./yoga.png" alt="Style 1">
       <img src="./athleisure.png" alt="Style 2">
       <img src="./dressing.png" alt="Style 3">
-      <!-- Add more images if needed -->
     </div>
 </section>
+
+<button class="more-button" onclick="location.href='other.html'">Next</button>
 
 </body>
 </html>
